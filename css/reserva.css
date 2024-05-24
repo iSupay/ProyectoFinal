@@ -1,0 +1,119 @@
+body {
+    background-color: rgb(252, 246, 220);
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+.reserva-formulario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5); /* Capa oscura encima de la imagen */
+    padding: 20px;
+    position: relative;
+}
+
+.form-container {
+    position: relative;
+    z-index: 2;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+    text-align: left;
+}
+
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1em;
+    color: #333;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.reserva-button {
+    background-color: #4e9ffccb;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s, color 0.3s;
+    margin-top: 10px;
+}
+
+.reserva-button:hover {
+    background-color: #fff;
+    color: #4e9ffccb;
+}
+
+
+.mensaje-exito {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    color: #000000;
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 9999;
+    width: 60%;
+    max-width: 600px;
+    text-align: center;
+    display: none;
+
+}
+
+
+.mensaje-contenido {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 400px;
+    width: 80%;
+}
+
+.cerrar-mensaje {
+    background-color: #4e9ffccb;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.cerrar-mensaje:hover {
+    background-color: #fff;
+    color: #4e9ffccb;
+}

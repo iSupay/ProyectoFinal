@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/glb.css">
+    <link rel="stylesheet" href="css/logo.css">
+    <link rel="stylesheet" href="css/amigos.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/jugab.css">
+
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <title>Tommy's Tales</title>
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#historia">Historia</a></li>
+            <li><a href="#amigos">Personajes</a></li>
+            <li><a href="#jugabilidad">Jugabilidad</a></li>
+            <li><a href="niveles.html">Niveles</a></li>
+            <li><a href="tienda.html">Tienda</a></li>
+            <li><a href="reserva.html">Reservar</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+
+
+        </ul>
+    </nav>
+
+
+<!-- Pantalla Inicial con Modelo 3D y Slider de Información -->
+
+<section id="personajes">
+    <div class="personaje">
+        <model-viewer src="glb/tommy.glb" alt="Tommy" auto-rotate camera-controls></model-viewer>
+        <div class="info">
+            <div class="info-slider">
+
+                <div class="slider-container">
+                    <div class="slide active">
+                        <h2>Tommy's Tales</h2>
+                        <hr>
+                        <p>
+                            Conoce Tommy's Tales, un juego  en el que te metes en los zapatos de Tommy, un pequeño gato con TDAH, el cual vive su dia a dia de manera muy divertida, dejandose llevar por su muy creativa imaginación 
+                        </p>
+                        <hr>
+                    </div>
+                    <div class="slide">
+                        <h2>¿Por qué existe esta página?</h2>
+                        <hr>
+                        <p>
+                            El motivo de esta página es presentar el concepto del juego en cuestión, dar a conocer su historia, personajes y demás de manera interactiva.
+                        </p>
+                        <hr>
+                    </div>
+                    <div class="slide">
+                        <h2>Disfruta la experiencia</h2>
+                        <hr>
+                        <p>
+                            Sumergete en esta aventura junto a Tommy y compañía, y disfruta de sus fantasías diarias mientras lo ayudas a salir adelante!!
+                        </p>
+                        <hr>
+                    </div>
+                </div>
+                <div class="slider-buttons">
+                    <button id="prev"><</button>
+                    <button id="next">></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <section id="inicio">
+        <div class="inicio-container">
+            <div class="inicio-left">
+                <img src="img/LogoTT.png" alt="Logo del Videojuego" class="logo">
+                <p>Presentado por Arath García Rubio</p>
+            </div>
+            <div class="inicio-right">
+                <div class="slider-circular" id="personajes-slider">
+                    <img src="img/TD.png" alt="Protagonista 1" class="active">
+                    <img src="img/CD.png" alt="Protagonista 2" class="inactive">
+                    <img src="img/RD.png" alt="Protagonista 3" class="inactive">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="historia">
+        <div class="historia-container">
+            <div class="historia-texto">
+                <h2>Historia</h2>
+                <p>
+                    “Tommy's Tales” es un juego que sigue la historia de Tommy, un chico creativo y soñador que comienza su sexto grado en la escuela primaria. Tommy tiene TDAH, lo que a menudo lo hace distraerse en clase. Sin embargo, cuenta con el apoyo de su mejor amiga, Connie, y un profesor llamado Robert, quien inicialmente parece ser un villano pero resulta ser un aliado en las aventuras imaginarias de Tommy.
+                </p>
+                <br>
+                <p>
+                    A lo largo del juego, los jugadores acompañarán a Tommy en cinco días clave de su vida escolar, representados como "niveles" jugables. En estos niveles, los jugadores experimentarán emocionantes desafíos, como una batalla contra sus útiles escolares que cobran vida, un intenso partido de "quemados" en el receso, y una carrera hacia la graduación. A medida que Tommy supera estos desafíos con la ayuda de Connie y Robert, aprenderá lecciones importantes sobre el poder de la concentración, la importancia del trabajo en equipo y el valor de seguir adelante, ¡todo mientras se divierte en el camino!
+                </p>
+            </div>
+            <div class="historia-imagenes">
+                <div class="gallery">
+                    <img src="img/Volley.png" alt="Historia Imagen 1">
+                    <img src="img/Enigmatica para editar.png" alt="Historia Imagen 2">
+                </div>
+                <img src="img/Poster-01.png" alt="Historia Imagen 3">
+            </div>
+        </div>
+    </section>
+
+    <section id="amigos">
+        <h2>Personajes</h2>
+        <div class="cards">
+            <div class="card" id="card-tommy">
+                <div class="card-image" style="background-image: url('img/TD.png');"></div>
+                <div class="card-name">Tommy</div>
+            </div>
+            <div class="card" id="card-connie">
+                <div class="card-image" style="background-image: url('img/CD.png');"></div>
+                <div class="card-name">Connie</div>
+            </div>
+            <div class="card" id="card-robert">
+                <div class="card-image" style="background-image: url('img/RD.png');"></div>
+                <div class="card-name">Robert</div>
+            </div>
+        </div>
+        <div id="overlay" class="overlay hidden">
+            <div class="expanded-card">
+                <button class="close-btn">&times;</button>
+                <div class="expanded-card-header">
+                    <div class="header-left">
+                        <div class="expanded-card-image" id="expanded-image"></div>
+                        <div class="expanded-card-name" id="expanded-name"></div>
+                    </div>
+                    <div class="header-right">
+                        <p class="personality" id="expanded-personality"></p>
+                    </div>
+                </div>
+                <div class="expanded-card-description">
+                    <p id="expanded-description"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="jugabilidad" class="jugabilidad-slider-section">
+        <div class="jugabilidad-slider">
+            <div class="jugabilidad-slide active" style="background-color: #3477eb;">
+                <div class="jugabilidad-slide-content">
+                    <h2>Mécanicas</h2>
+                    <p>
+                        1.- <b>Movimiento</b>: Los jugadores pueden moverse en todas las direcciones, correr para llegar más rápido a ciertos lugares y esquivar obstáculos. <br><br>
+
+                        2.- <b>Interacción</b>: Pueden interactuar con objetos y personajes del entorno, como abrir puertas, recoger ítems y hablar con otros personajes. <br><br>
+
+                        3.- <b>Acciones especiales</b>: Tomy puede realizar acciones especiales basadas en su imaginación y el entorno, como crear objetos imaginarios para resolver acertijos o superar obstáculos. <br><br>
+
+                        4.- <b>Uso de ítems</b>: Los jugadores pueden utilizar ítems especiales que encuentren en el juego, como potenciadores de velocidad o herramientas para reducir el estrés de Tommy. <br><br>
+
+                        5.- <b>Cooperación</b>: En modo cooperativo, los jugadores deben coordinarse y trabajar juntos para superar desafíos que requieran acciones simultáneas o estrategias coordinadas. <br><br>
+
+                    </p>
+                </div>
+            </div>
+            <div class="jugabilidad-slide" style="background-color: #36c4a5;">
+                <div class="jugabilidad-slide-content">
+                    <h2>Mécanicas</h2>
+                    <p>
+                        1.- <b>Obtención de recompensas</b>: Los jugadores obtienen recompensas al completar misiones y desafíos, como monedas o ítems especiales que les ayudarán en su aventura.<br><br>
+
+                        2.- <b>Superación de misiones</b>: Cada nivel presenta misiones y objetivos específicos que los jugadores deben cumplir para avanzar. Estos desafíos pueden incluir derrotar enemigos, resolver acertijos o completar actividades escolares.<br><br>
+
+                        3.- <b>Cooperativo</b>: Los jugadores pueden elegir jugar solos o en modo cooperativo con un amigo. En el modo cooperativo, los jugadores deben trabajar juntos para superar los desafíos y avanzar en la historia.<br><br>
+
+                        4.- <b>Subida de nivel</b>: Los jugadores pueden subir de nivel al completar misiones y ganar experiencia. Al subir de nivel, desbloquean nuevas habilidades y mejoras para su personaje.<br><br>
+                    </p>
+                </div>
+            </div>
+            <div class="jugabilidad-slide" style="background-color: #ffb400;">
+                <div class="jugabilidad-slide-content">
+                    <h2>Elementos generales</h2>
+                    <p>
+                        1.- <b>Eventos recurrentes</b>: Durante el juego, los jugadores se encontrarán con eventos recurrentes que desafiarán su habilidad y estrategia. Estos eventos pueden incluir exámenes sorpresa, proyectos escolares importantes o conflictos con otros estudiantes.<br><br>
+
+                        2.- <b>Poderes especiales</b>:  Tommy tiene acceso a poderes especiales basados en su imaginación y creatividad. Estos poderes pueden incluir la capacidad de crear objetos imaginarios para resolver acertijos, o la capacidad de concentrarse y reducir su estrés en situaciones de alta presión.<br><br>
+
+                        3.- <b>Desafíos de concentración</b>: Para reflejar el TDAH de Tommy, algunos desafíos requerirán que los jugadores se concentren y mantengan la calma en situaciones estresantes. Por ejemplo, pueden enfrentarse a pruebas escolares cronometradas que requieren respuestas rápidas y precisas.<br><br>
+
+                        4.- <b>Enemigos</b>: Los enemigos en el juego son representaciones imaginarias de los desafíos y obstáculos que Tomy enfrenta en la escuela. Por ejemplo, los útiles escolares que cobran vida pueden convertirse en enemigos que Tomy debe derrotar usando su astucia y habilidades.<br><br>
+                    </p>
+                </div>
+            </div>
+            <div class="jugabilidad-slide" style="background-color: #d12d42;">
+                <div class="jugabilidad-slide-content">
+                    <h2>Wireframes de niveles</h2>
+                    <p>
+                        <b>Batalla de los útiles escolares:</b><br>
+                        Utiles escolares que cobran vida se convierten en enemigos que Tommy debe derrotar usando su imaginación y habilidades especiales.
+                    </p><br>
+                    <img src="img/Nivel1.png" alt="" style="width: 700px;"> 
+                </div>
+            </div>
+            <div class="jugabilidad-slide" style="background-color: #7852b2;">
+                <div class="jugabilidad-slide-content">
+                    <h2>Wireframes de niveles</h2>
+                    <p>
+                        <b>Partido de "quemados":</b><br>
+                        Tommy y sus amigos juegan un emocionante partido de "quemados" en el patio de la escuela, donde Tommy debe demostrar su habilidad en el juego.
+                    </p><br>
+                    <img src="img/Nivel2.png" alt="" style="width: 700px;">
+                </div>
+            </div>
+            <div class="jugabilidad-slide" style="background-color: #8ec482;">
+                <div class="jugabilidad-slide-content">
+                    <h2>Wireframes de niveles</h2>
+                    <p>
+                        <b>Escape en los pasillos:</b><br>
+                        Tommy se ve envuelto en una situación misteriosa en los pasillos de la escuela y debe escapar de personajes misteriosos y resolver acertijos para salir.
+
+                    </p><br>
+                    <img src="img/Nivel3.png" alt="" style="width: 700px;">
+                </div>
+            </div>
+            <div class="slider-buttons-jugabilidad">
+                <button class="prev-jugabilidad" onclick="moveSlideJugabilidad(-1)">&lt;</button>
+                <button class="next-jugabilidad" onclick="moveSlideJugabilidad(1)">&gt;</button>
+            </div>
+        </div>
+        <div class="ver-niveles">
+            <a href="niveles.html" class="ver-niveles-button">Ver Niveles</a>
+        </div>
+    </section>
+    
+    
+    
+
+<!-- Footer -->
+<footer>
+    <div class="footer-content">
+        <nav class="footer-nav">
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#historia">Historia</a></li>
+                <li><a href="#amigos">Personajes</a></li>
+                <li><a href="#jugabilidad">Jugabilidad</a></li>
+                <li><a href="niveles.html">Niveles</a></li>
+                <li><a href="tienda.html">Tienda</a></li>
+                <li><a href="reserva.html">Reservar</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+
+
+            </ul>
+        </nav>
+        <div class="footer-sections">
+            <div class="footer-section">
+                <h3>Sobre Nosotros</h3>
+                <p><a href="#">Nuestro equipo</a></p>
+                <p><a href="#">Carreras</a></p>
+                <p><a href="#">Prensa</a></p>
+            </div>
+            <div class="footer-section">
+                <h3>Soporte</h3>
+                <p><a href="#">Ayuda</a></p>
+                <p><a href="#">Preguntas frecuentes</a></p>
+                <p><a href="#">Política de privacidad</a></p>
+            </div>
+            <div class="footer-section">
+                <h3>Redes Sociales</h3>
+                <p><a href="https://www.facebook.com" target="_blank">Facebook</a></p>
+                <p><a href="https://www.twitter.com" target="_blank">Twitter</a></p>
+                <p><a href="https://www.instagram.com" target="_blank">Instagram</a></p>
+            </div>
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <p>Email: <a href="mailto:contacto@tusitio.com">contacto@tusitio.com</a></p>
+                <p>Teléfono: <a href="tel:+1234567890">+1 234 567 890</a></p>
+                <p><a href="#contacto">Formulario de contacto</a></p>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 TuSitio. Todos los derechos reservados.</p>
+    </div>
+</footer>
+
+
+    <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+@font-face {
+    font-family: Poppins-Light;
+    src: url(../fonts/Poppins-Light.ttf);
+}
+
+#personajes {
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    max-width: 1800px;
+    margin: 0 auto;
+}
+
+.personaje {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1500px;
+    margin: 20px 0;
+}
+
+.personaje.reverse {
+    flex-direction: row-reverse;
+}
+
+.personaje model-viewer {
+    left: 100px;
+    width: 700px;
+    height: 700px; /* Ajusta la altura según sea necesario */
+    border-radius: 10px;
+}
+
+.personaje .info {
+    font-family: Poppins-Light;
+    margin-right: 200px;
+    width: 30%;
+    padding: 20px;
+    z-index: 1000;
+}
+
+.personaje h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.personaje p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+}
+
+
+.info-slider {
+    flex: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+
+.slider-container {
+    overflow: hidden;
+    position: relative;
+}
+
+.slide {
+    display: none;
+    text-align: left;
+}
+
+.slide.active {
+    display: block;
+}
+
+.slider-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.slider-buttons button {
+    background-color: #fff;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+.slider-buttons button:hover {
+    background-color: #ddd;
+}

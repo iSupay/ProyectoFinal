@@ -1,0 +1,132 @@
+@font-face {
+    font-family: poppins regular;
+    src: url(../fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: poppins bold;
+    src: url(../fonts/Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: Poppins-Light;
+    src: url(../fonts/Poppins-Light.ttf);
+}
+
+
+.jugabilidad-slider-section {
+    position: relative;
+    max-width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.jugabilidad-slider {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.jugabilidad-slide {
+    border-radius: 25px;
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    top: 0;
+    left: 80px;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.jugabilidad-slide.active {
+    opacity: 1;
+}
+
+.jugabilidad-background-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-position: center;
+    filter: blur(10px);
+    opacity: 0.6;
+}
+
+.jugabilidad-slide-content {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.jugabilidad-slide-content h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.jugabilidad-slide-content p {
+    font-size: 1.2em;
+    max-width: 800px;
+}
+
+
+@keyframes jugabilidadSlideAnimation {
+    0%, 20% { opacity: 1; }
+    25%, 100% { opacity: 0; }
+}
+
+
+
+
+.slider-buttons-jugabilidad {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+}
+
+.slider-buttons-jugabilidad button {
+    background-color: #4e9ffccb;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+}
+
+.slider-buttons-jugabilidad button:hover {
+    background-color: #ddd;
+}
+
+.ver-niveles {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.ver-niveles-button {
+    background-color: #4e9ffccb; 
+    color: #fff;
+    padding: 10px 20px; 
+    border-radius: 5px;
+    text-decoration: none; 
+    font-family: 'Poppins', sans-serif; 
+    font-size: 24px; 
+    transition: background-color 0.3s, color 0.3s; 
+}
+
+.ver-niveles-button:hover {
+    background-color: #fff;
+    color: #4e9ffccb; 
+}

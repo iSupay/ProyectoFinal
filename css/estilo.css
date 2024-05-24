@@ -1,0 +1,167 @@
+/*-------------------aspectos generales------------------*/
+
+@font-face {
+    font-family: poppins regular;
+    src: url(../fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: poppins bold;
+    src: url(../fonts/Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: Poppins-Light;
+    src: url(../fonts/Poppins-Light.ttf);
+}
+
+body {
+    justify-content: center;
+    max-width: 100%;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('../img/Fondo.png') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+}
+
+section {
+    background: rgba(0, 0, 0, 0.61);
+    padding: 60px 20px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: opacity 1s;
+}
+
+
+/*--------------------------------------------------------------------*/
+
+#historia {
+    position: relative;
+    background-image: url('../img/Caja frontal.png');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 60px 20px;
+}
+
+#historia::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Capa negra con opacidad */
+    z-index: 1; 
+}
+
+.historia-container {
+    position: relative;
+    z-index: 2;
+    padding: 35px;
+    background: rgba(0, 0, 0, 0.6);
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1600px;
+    margin: 0 auto; 
+    border-radius: 20px;
+}
+.historia-texto {
+    font-family: poppins light;
+    font-size: 16px;
+    flex: 1; 
+    max-width: 1580px;
+    margin-right: 20px; 
+}
+
+.historia-imagenes {
+    flex: 1; 
+    max-width: 50%; 
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+
+.gallery img {
+    border: 2px solid white;
+    width: auto; 
+    max-width: 280px; 
+}
+
+.gallery img:first-child {
+    width: auto; 
+    max-width: 280px; 
+    margin-left: 20px; 
+    margin-bottom: 20px;
+}
+
+.historia-imagenes img:last-child {
+    margin-left: 20px;
+    width: auto; 
+    max-width: 280px;
+    max-height: auto; 
+    border: 2px solid white;
+}
+
+#jugabilidad {
+    background: #ffffff;
+    color: #333;
+}
+
+.gallery,
+.slider {
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.gallery img,
+.slider img {
+    width: 49%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.slider {
+    position: relative;
+    overflow: hidden;
+}
+
+.slider img {
+    position: absolute;
+    transition: opacity 1s ease-in-out;
+}
+
+.slider img.active {
+    opacity: 1;
+    z-index: 1;
+}
+
+.slider img.inactive {
+    opacity: 0;
+    z-index: 0;
+}
+
+h1,
+h2 {
+    margin: 0.5em 0;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+}

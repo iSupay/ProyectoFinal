@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Reserva</title>
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/reserva.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="tienda.html">Tienda</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- Sección de formulario de reserva -->
+    <section class="reserva-formulario">
+        <div class="form-container">
+            <h2>Reserva tu Juego</h2>
+            <form id="reservaForm">
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="correo">Correo Electrónico:</label>
+                    <input type="email" id="correo" name="correo" required>
+                </div>
+                <div class="form-group">
+                    <label for="telefono">Número Telefónico:</label>
+                    <input type="tel" id="telefono" name="telefono" required>
+                </div>
+                <div class="form-group">
+                    <label for="direccion">Dirección:</label>
+                    <input type="text" id="direccion" name="direccion">
+                </div>
+                <div class="form-group">
+                    <label for="cantidad">Cantidad:</label>
+                    <input type="number" id="cantidad" name="cantidad" min="1" required>
+                </div>
+                <button type="submit" class="reserva-button">Enviar Reserva</button>
+                <button type="button" id="clearFormButton" class="reserva-button">Vaciar Formulario</button>
+            </form>
+        </div>
+    </section>
+    
+
+    <!-- Cuadro de mensaje -->
+    <div id="mensajeExito" class="mensaje-exito">
+        <div class="mensaje-contenido">
+            <h2>¡Reserva Exitosa!</h2>
+            <p>Gracias por apoyar nuestro proyecto.</p>
+            <button id="cerrarMensaje" class="cerrar-mensaje">Cerrar</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="tienda.html">Tienda</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="footer-sections">
+                <div class="footer-section">
+                    <h3>Sobre Nosotros</h3>
+                    <p><a href="#">Nuestro equipo</a></p>
+                    <p><a href="#">Carreras</a></p>
+                    <p><a href="#">Prensa</a></p>
+                </div>
+                <div class="footer-section">
+                    <h3>Soporte</h3>
+                    <p><a href="#">Ayuda</a></p>
+                    <p><a href="#">Preguntas frecuentes</a></p>
+                    <p><a href="#">Política de privacidad</a></p>
+                </div>
+                <div class="footer-section">
+                    <h3>Redes Sociales</h3>
+                    <p><a href="https://www.facebook.com" target="_blank">Facebook</a></p>
+                    <p><a href="https://www.twitter.com" target="_blank">Twitter</a></p>
+                    <p><a href="https://www.instagram.com" target="_blank">Instagram</a></p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contacto</h3>
+                    <p>Email: <a href="mailto:contacto@tusitio.com">contacto@tusitio.com</a></p>
+                    <p>Teléfono: <a href="tel:+1234567890">+1 234 567 890</a></p>
+                    <p><a href="#contacto">Formulario de contacto</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 TuSitio. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

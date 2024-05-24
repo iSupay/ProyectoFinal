@@ -1,0 +1,148 @@
+@font-face {
+    font-family: poppins regular;
+    src: url(../fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: poppins bold;
+    src: url(../fonts/Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: Poppins-Light;
+    src: url(../fonts/Poppins-Light.ttf);
+}
+
+
+body {
+    font-family: poppins, sans-serif;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    background: black;
+}
+
+#tienda{
+    display: flex;
+}
+
+nav, footer {
+    background-color: #4e9ffccb;
+    color: white;
+    text-align: center;
+}
+
+nav ul, footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li, footer ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.producto {
+    background-color: #fff1c5;
+    width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.producto img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.producto h3 {
+    margin-top: 10px;
+}
+
+.producto p {
+    font-size: 14px;
+}
+
+.producto button {
+    background-color: #4e9ffccb;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    padding: 10px 20px;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.producto button:hover {
+    background-color: #4e9fff;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.reserva {
+    position: relative;
+    background-image: url('../img/Fondo.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reserva-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); 
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reserva-info {
+    color: #fff;
+    text-align: center;
+    max-width: 600px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+}
+
+.reserva-info h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.reserva-info p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.reserva-button {
+    background-color: #4e9ffccb;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.reserva-button:hover {
+    background-color: #fff;
+    color: #4e9ffccb;
+}

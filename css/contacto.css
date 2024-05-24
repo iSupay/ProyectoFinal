@@ -1,0 +1,49 @@
+body{
+    text-decoration: none;
+}
+
+.contacto-info {
+    padding: 40px;
+    background-color: #f8f8f8;
+}
+
+.info-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.ficha-contacto {
+    text-align: center;
+}
+
+.ficha-contacto h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.qr-container {
+    margin-bottom: 20px;
+}
+
+.qr-container img {
+    max-width: 200px;
+    height: auto;
+}
+
+.mi-info {
+    text-align: center;
+}
+
+.mi-info h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.mi-info p {
+    text-decoration: none;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+
