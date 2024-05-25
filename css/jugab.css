@@ -116,6 +116,7 @@
 }
 
 .ver-niveles-button {
+    z-index: 1000000000000;
     background-color: #4e9ffccb; 
     color: #fff;
     padding: 10px 20px; 
@@ -129,4 +130,37 @@
 .ver-niveles-button:hover {
     background-color: #fff;
     color: #4e9ffccb; 
+}
+
+@media (max-width: 768px) {
+    .jugabilidad-slide {
+        width: 100%;
+        height: 100%;
+        left: 0;
+        border-radius: 0;
+    }
+
+    .jugabilidad-slide-content h2 {
+        font-size: 2em;
+    }
+
+    .jugabilidad-slide-content p {
+        font-size: 1em;
+        max-width: 90%;
+    }
+
+    .slider-buttons-jugabilidad {
+        justify-content: center;
+        z-index: 100000000000000000;
+    }
+
+    .slider-buttons-jugabilidad button {
+        font-size: 18px;
+        padding: 8px 16px;
+    }
+
+    .ver-niveles-button {
+        font-size: 18px;
+        padding: 8px 16px;
+    }
 }

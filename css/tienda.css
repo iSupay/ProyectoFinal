@@ -146,3 +146,52 @@ body {
     background-color: #fff;
     color: #4e9ffccb;
 }
+
+@media (max-width: 768px) {
+    .producto {
+        width: 100%;
+        max-width: 100%;
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .producto img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .producto h3 {
+        font-size: 1.2em;
+    }
+
+    .producto p {
+        font-size: 12px;
+    }
+
+    .producto button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .reserva {
+        padding: 10px;
+    }
+
+    .reserva-info {
+        padding: 10px;
+    }
+
+    .reserva-info h2 {
+        font-size: 1.5em;
+    }
+
+    .reserva-info p {
+        font-size: 1em;
+    }
+
+    .reserva-button {
+        font-size: 0.9em;
+        padding: 8px 16px;
+    }
+}

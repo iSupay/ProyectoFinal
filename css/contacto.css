@@ -1,7 +1,12 @@
-body{
-    text-decoration: none;
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none; /* Se aplica a todo el cuerpo del documento */
 }
 
+/* Estilos de la sección de contacto */
 .contacto-info {
     padding: 40px;
     background-color: #f8f8f8;
@@ -10,11 +15,13 @@ body{
 .info-container {
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-start; /* Ajusta el alineado vertical */
+    flex-wrap: wrap; /* Añadido para que los elementos se envuelvan en dispositivos pequeños */
 }
 
 .ficha-contacto {
-    text-align: center;
+    width: calc(50% - 20px); /* Añadido para que ocupen la mitad del ancho en dispositivos grandes */
+    margin-bottom: 40px; /* Añadido para espaciar las fichas de contacto */
 }
 
 .ficha-contacto h2 {
@@ -27,12 +34,12 @@ body{
 }
 
 .qr-container img {
-    max-width: 200px;
+    max-width: 100%;
     height: auto;
 }
 
 .mi-info {
-    text-align: center;
+    width: 100%; /* Ocupa todo el ancho en dispositivos móviles */
 }
 
 .mi-info h2 {
@@ -41,9 +48,184 @@ body{
 }
 
 .mi-info p {
-    text-decoration: none;
     font-size: 16px;
     margin-bottom: 10px;
 }
 
+.mi-info button {
+    background-color: #4e9ffccb;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;/* Estilos generales */
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Poppins', sans-serif;
+        text-decoration: none; /* Se aplica a todo el cuerpo del documento */
+    }
+    
+    /* Estilos de la sección de contacto */
+    .contacto-info {
+        padding: 40px;
+        background-color: #f8f8f8;
+    }
+    
+    .info-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start; /* Ajusta el alineado vertical */
+        flex-wrap: wrap; /* Añadido para que los elementos se envuelvan en dispositivos pequeños */
+    }
+    
+    .ficha-contacto {
+        width: calc(50% - 20px); /* Añadido para que ocupen la mitad del ancho en dispositivos grandes */
+        margin-bottom: 40px; /* Añadido para espaciar las fichas de contacto */
+    }
+    
+    .ficha-contacto h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    
+    .qr-container {
+        margin-bottom: 20px;
+    }
+    
+    .qr-container img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .mi-info {
+        width: 100%; /* Ocupa todo el ancho en dispositivos móviles */
+    }
+    
+    .mi-info h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    
+    .mi-info p {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    
+    .mi-info button {
+        background-color: #4e9ffccb;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        font-size: 1em;
+        cursor: pointer;
+        width: 100%;
+        transition: background-color 0.3s, color 0.3s;
+        margin-top: 10px;
+    }
+    
+    /* Estilos responsivos */
+    @media (min-width: 768px) {
+        .info-container {
+            align-items: center; /* Vuelve al alineado vertical centrado en dispositivos grandes */
+        }
+    
+        .mi-info {
+            width: calc(50% - 20px); /* Ajusta el ancho en dispositivos grandes */
+        }
+    }
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none; /* Se aplica a todo el cuerpo del documento */
+}
 
+/* Estilos de la sección de contacto */
+.contacto-info {
+    padding: 40px;
+    background-color: #f8f8f8;
+}
+
+.info-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start; /* Ajusta el alineado vertical */
+    flex-wrap: wrap; /* Añadido para que los elementos se envuelvan en dispositivos pequeños */
+}
+
+.ficha-contacto {
+    width: calc(50% - 20px); /* Añadido para que ocupen la mitad del ancho en dispositivos grandes */
+    margin-bottom: 40px; /* Añadido para espaciar las fichas de contacto */
+}
+
+.ficha-contacto h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.qr-container {
+    margin-bottom: 20px;
+}
+
+.qr-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+.mi-info {
+    width: 100%; /* Ocupa todo el ancho en dispositivos móviles */
+}
+
+.mi-info h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.mi-info p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.mi-info button {
+    background-color: #4e9ffccb;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s, color 0.3s;
+    margin-top: 10px;
+}
+
+/* Estilos responsivos */
+@media (min-width: 768px) {
+    .info-container {
+        align-items: center; /* Vuelve al alineado vertical centrado en dispositivos grandes */
+    }
+
+    .mi-info {
+        width: calc(50% - 20px); /* Ajusta el ancho en dispositivos grandes */
+    }
+}
+    
+    font-size: 1em;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s, color 0.3s;
+    margin-top: 10px;
+}
+
+/* Estilos responsivos */
+@media (min-width: 768px) {
+    .info-container {
+        align-items: center; /* Vuelve al alineado vertical centrado en dispositivos grandes */
+    }
+
+    .mi-info {
+        width: calc(50% - 20px); /* Ajusta el ancho en dispositivos grandes */
+    }
+}

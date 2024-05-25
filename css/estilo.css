@@ -42,7 +42,7 @@ section {
 
 #historia {
     position: relative;
-    background-image: url('../img/Caja frontal.png');
+    background: linear-gradient(45deg, #00c8fa, #a7ebf7); /* Degradado de naranja a rosa */
     background-size: cover;
     background-position: center;
     color: white;
@@ -116,6 +116,30 @@ section {
     border: 2px solid white;
 }
 
+@media (max-width: 768px) {
+    .historia-container {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .historia-texto {
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .historia-imagenes {
+        max-width: 100%;
+        flex-direction: column;
+    }
+
+    .gallery img,
+    .historia-imagenes img:last-child {
+        max-width: 100%;
+        margin: 0 auto 20px;
+    }
+}
+
 #jugabilidad {
     background: #ffffff;
     color: #333;
@@ -164,4 +188,23 @@ p {
     text-align: center;
     max-width: 600px;
     margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+
+    section {
+        padding: 20px;
+    }
+
+    #inicio .inicio-container {
+        flex-direction: column;
+    }
+
+    #inicio .inicio-left, #inicio .inicio-right {
+        flex: 1 1 100%;
+    }
+
+    #inicio .logo {
+        max-width: 60%;
+    }
 }

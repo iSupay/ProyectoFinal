@@ -42,3 +42,13 @@ nav ul li a:hover {
     background-color: #fff; 
     color: #333; 
 }
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+}

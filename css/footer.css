@@ -102,3 +102,18 @@ footer {
 .footer-bottom p {
     margin: 0;
 }
+
+.color-palette {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.color-box {
+    border: 1px solid white;
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+    border-radius: 5px;
+}
